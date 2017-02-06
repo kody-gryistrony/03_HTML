@@ -1,0 +1,109 @@
+<!-- Info wstępne!
+1. Zawsze sprawdź wszystkie literówki!
+2. Zawsze sprawdź poprawność zapisu znaczników! artybut=" "  - dwa cudzyslowy podwojne! 
+3. Twój plik musi mieć rozszerzenie .html np: index.html
+4. Zawsze sprawdzaj czy zamknęłaś/zamknąłeś tag 
+5. Zawsze sprawdzaj literówki i błędy w ścieżkach.
+6. Utrzymuj porządek w kodzie - nowe "dziecko" oddzielaj tabulatorem od lewej lub 4 spacjami
+7. cmd plus '/'  lub crtl plus '/' tworzy komentarz w html.
+8. Podświetlanie zamykania tagów dla użytkowników Sublime (dla bardziej zaawansowanych, nie przestraszcie się :) ):
+	a) Zainstaluj package control https://packagecontrol.io/installation
+	b) wciśnij shift + ctrl/cmd + p
+	c) Wybierz package control: install package
+	d) BracketHighlighter
+-->
+
+
+
+
+<!-- Znacznik dla html5: -->
+<!doctype html>
+<html>
+<!-- Blok head – tu zawierają się najważniejsze info -->
+	<head>
+	<!-- Polskie znaki!: -->
+		<meta charset="utf-8"/>
+
+		<meta lang="pl"/>
+		<meta name="author" content="kodowanie"/>
+		<!-- <meta name="robots" content="noindex, nofollow" - ten znacznik jest opcjonalny, podług potrzeb/> -->
+		<meta name="description" content="Opis do wyszukiwarki"/>
+		<!-- <meta name="keywords" content="kluczowe słowa"  - ten znacznik jest nieużyteczny/> -->
+		<title>Przykładowa strona</title>
+	</head>
+	<!-- Ciało dokumentu -->
+	<body>
+	<!-- nagłówek -->
+		<header>
+		<!-- nawigacja - zazwyczaj lista z odnośnikami -->
+			<nav>
+				<ul>
+					<li>
+					<!-- Pamiętaj: # odnosi się do id elementu.  -->
+						<a href="#pierwsza">Pierwsza</a>
+					</li>
+					<li>
+						<a href="#druga">Druga</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- Typy tytułów: -->
+			<h1>Nagłówek</h1>
+			<h2>Nagłówek</h2>
+			<h3>Nagłówek</h3>
+			<h4>Nagłówek</h4>
+			<h5>Nagłówek</h5>
+
+		</header>
+		<!-- Sekcja. -->
+		<section id="pierwsza">
+			<p>Tekst w pierwszej sekcji</p>	
+			<div>
+				<p>Tekst1</p>
+				<p>Tekst1</p>
+				<!-- Elementy liniowe - inline -->
+				<span>Tekst2 </span>
+				<span>Tekst2 </span>
+				<span>Tekst2 </span>
+				<!-- Ścieżki względne i bezwględne
+					Bezwględne - droga od źródła do celu
+					Względne - droga od położenia naszego do celu
+				 -->
+				<a href="file:///Users/magdazelezik/Desktop/strona/logo.jpg">Obrazek</a>
+				<a href="../logo.jpg">Obrazek</a>
+				<a href="http://google.com">Google.com</a>
+				<a href="/google.html">Google.com</a>
+				<!-- Lista uporządkowana -->
+				<ol>
+					<li>Jeden</li>
+					<li>Dwa</li>
+					<li>Trzy</li>
+						<ol>
+							<li>Jeden</li>
+							<li>Dwa</li>
+							<li>Trzy</li>
+						</ol>
+				</ol>
+				<!-- Lista nieuporządkowana -->
+				<ul>
+					<li>Jeden</li>
+					<li>Dwa</li>
+					<li>Trzy</li>
+						<ul>
+							<li>Jeden</li>
+							<li>Dwa</li>
+							<li>Trzy</li>
+						</ul>
+				</ul>
+
+			</div>
+		</section>
+		<section id="druga">
+		<!-- Pamiętaj zawsze o tekscie alternatywnym -->
+			<img src="../logo.jpg" alt="Tekst alternatywny" />
+		</section>
+		<footer>
+			<p>Stopka</p>
+		</footer>
+	</body>
+</html>
